@@ -12,7 +12,7 @@
 <body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
   @include('partials.navbar')
 
-  @yield('movies')
+  @yield('content')
   @include('partials.footer')
 </body>
 </html>
