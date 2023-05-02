@@ -32,10 +32,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2023/04/the-mother-poster.jpg">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">Thriller</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -43,10 +46,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2004/05/2004-troy-4-1.jpg">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -54,10 +60,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2000/05/2000-poster-gladiator-1-1.jpg">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -65,10 +74,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://oc.kg/media/images/9/e/9e56671d7cec5195999b7b2b6d6d8997/image.jpg">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">Action</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -76,10 +88,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -87,10 +102,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -98,10 +116,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
@@ -109,10 +130,13 @@
                 <a href="#">
                     <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80">
                     <div class="pt-3 flex items-center justify-between">
-                        <p class="">Product Name</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                        <p class="text-blue-500">MovieName</p>
                     </div>
-                    <p class="pt-1 text-gray-900">£9.99</p>
+                    <hr>
+                    <div class=" flex items-center justify-between">
+                        <p class="pt-1 text-gray-700 text-xs">History</p>
+                        <p class=" text-green-700">5.0</p>
+                    </div>
                 </a>
             </div>
 
