@@ -7,11 +7,12 @@
   @vite('resources/css/app.css')
   <title>Movie-chooser</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{asset('styles.css')}}">
+  <link rel="stylesheet" href="{{ Vite::asset('resources/css/styles.css') }}">
 </head>
 <body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
- 
-  @yield('movies')
+  @include('partials.navbar')
 
+  @yield('movies')
+  @include('partials.footer')
 </body>
 </html>

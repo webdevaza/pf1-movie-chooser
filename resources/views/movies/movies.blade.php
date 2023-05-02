@@ -7,32 +7,24 @@
 
             <nav id="store" class="w-full z-30 top-0 px-6 py-1">
                 <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
-
-                    <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
-                Store
-            </a>
-
-                    <div class="flex items-center" id="store-nav-content">
-
-                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
-                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M7 11H17V13H7zM4 7H20V9H4zM10 15H14V17H10z" />
-                            </svg>
-                        </a>
-
-                        <a class="pl-3 inline-block no-underline hover:text-black" href="#">
-                            <svg class="fill-current hover:text-black" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
-                            </svg>
-                        </a>
-
-                    </div>
-            </div>
+                     <form class="w-full">   
+                        <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                            </div>
+                            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies" required>
+                            <button type="submit" class="text-white absolute right-4 bottom-4 bg-gray-50">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3H6a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h4M16 17l5-5-5-5M19.8 12H9"/></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </nav>
 
             <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
                 <a href="#">
-                    <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2023/04/the-mother-poster.jpg">
                     <div class="pt-3 flex items-center justify-between">
                         <p class="">Product Name</p>
                         <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -45,7 +37,7 @@
 
             <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
                 <a href="#">
-                    <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2004/05/2004-troy-4-1.jpg">
                     <div class="pt-3 flex items-center justify-between">
                         <p class="">Product Name</p>
                         <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -58,7 +50,7 @@
 
             <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
                 <a href="#">
-                    <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2000/05/2000-poster-gladiator-1-1.jpg">
                     <div class="pt-3 flex items-center justify-between">
                         <p class="">Product Name</p>
                         <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -71,7 +63,7 @@
 
             <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
                 <a href="#">
-                    <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
+                    <img class="hover:grow hover:shadow-lg" src="https://oc.kg/media/images/9/e/9e56671d7cec5195999b7b2b6d6d8997/image.jpg">
                     <div class="pt-3 flex items-center justify-between">
                         <p class="">Product Name</p>
                         <svg class="h-6 w-6 fill-current text-gray-500 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
