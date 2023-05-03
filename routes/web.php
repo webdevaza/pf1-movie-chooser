@@ -19,3 +19,9 @@ Route::get('/', function () {
 Route::get('/random', function () {
     return view('movies.movie');
 });
+Route::get('/add', function () {
+    return view('movies.add-movie');
+});
+Route::get('/edit', function () {
+    return view('movies.edit-movie');
+});

@@ -12,7 +12,7 @@
 
         <div class="order-2 md:order-3 flex items-center" id="nav-content">
             
-            <a class="inline-block no-underline hover:text-black mx-3" href="#">
+            <a class="inline-block no-underline hover:text-black mx-3" href="/add">
                 Add movie
             </a>
             
