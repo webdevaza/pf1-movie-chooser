@@ -25,3 +25,6 @@ Route::get('/add', function () {
 Route::get('/edit', function () {
     return view('movies.edit-movie');
 });
+Route::get('/register', function () {
+    return view('user.register');
+});

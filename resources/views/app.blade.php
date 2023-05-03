@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ Vite::asset('resources/css/styles.css') }}">
 </head>
-<body class="bg-white text-gray-600 work-sans leading-normal text-base tracking-normal">
+<body class="text-gray-600 bg-gray-100 work-sans leading-normal text-base tracking-normal">
   @include('partials.navbar')
 
   @yield('content')
