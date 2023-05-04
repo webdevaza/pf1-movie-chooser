@@ -3,7 +3,8 @@
 @section('content')
     <div class="flex justify-center bg-white">
         <div class="border-2 border-gray-300  md:w-1/3 bg-gray-100 rounded-lg m-2 p-2">
-            <form class="m-2 p-2 text-center">
+            <form class="m-2 p-2 text-center" action="{{route('user.store')}}" method="POST">
+                @csrf
                 <div class="grid gap-6 mt-6 mb-6 md:grid-cols-2">
                     <div>
                         <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>

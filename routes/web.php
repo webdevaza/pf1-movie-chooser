@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,10 @@ Route::get('/add', function () {
 Route::get('/edit', function () {
     return view('movies.edit-movie');
 });
-Route::get('/register', function () {
-    return view('user.register');
+
+Route::get('/register', [UserController::class, 'create']);
+Route::post('/register', [UserController::class, 'store'])->name('user.store');
+
+Route::get('/login', function () {
+    return view('user.login');
 });
