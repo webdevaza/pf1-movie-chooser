@@ -27,10 +27,10 @@ class UserController extends Controller
         $form['password'] = bcrypt($form['password']);
 
         $user = User::create($form);
-
+        
         auth()->login($user);
 
-        return redirect('/')->with('message', 'User registered and logged in!');
+        return redirect('/')->with('message', $form['firstName'].' has registered and logged in!');
     }
     // login page
     public function login()
