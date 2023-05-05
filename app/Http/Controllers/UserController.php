@@ -49,9 +49,9 @@ class UserController extends Controller
         if(auth()->attempt($form)) {
             $request->session()->regenerate();
 
-            return redirect('/');
+            return redirect('/')->with('message','You have logged in!');
         }
-        return back()->withErrors(['message'=>'Invalid email or password']);
+        return back()->withErrors(['error'=>'Invalid email or password']);
     }
 
     // log user out
@@ -62,6 +62,6 @@ class UserController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('/');
+        return redirect('/')->with('message', 'You have logged out!');
     }
 }
