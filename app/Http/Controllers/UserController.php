@@ -8,13 +8,13 @@ use Illuminate\Validation\Rule;
 
 class UserController extends Controller
 {
-    //show 'register.blade'
+    // register page
     public function create () 
     {
         return view('user.register');
     }
 
-    //store user in DB
+    // store user in DB
     public function store(Request $request)
     {
         $form = $request->validate([
@@ -31,5 +31,37 @@ class UserController extends Controller
         auth()->login($user);
 
         return redirect('/')->with('message', 'User registered and logged in!');
+    }
+    // login page
+    public function login()
+    {
+        return view('user.login');
+    }
+
+    // authenticate user
+    public function authenticate(Request $request)
+    {
+        $form = $request->validate([
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+
+        if(auth()->attempt($form)) {
+            $request->session()->regenerate();
+
+            return redirect('/');
+        }
+        return back()->withErrors(['message'=>'Invalid email or password']);
+    }
+
+    // log user out
+    public function logout(Request $request)
+    {
+        auth()->logout();
+
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('/');
     }
 }

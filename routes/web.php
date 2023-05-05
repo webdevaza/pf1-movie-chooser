@@ -29,7 +29,6 @@ Route::get('/edit', function () {
 
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register', [UserController::class, 'store'])->name('user.store');
-
-Route::get('/login', function () {
-    return view('user.login');
-});
+Route::get('/login', [UserController::class, 'login']);
+Route::post('/login', [UserController::class, 'authenticate']);
+Route::get('/logout', [UserController::class, 'logout']);
