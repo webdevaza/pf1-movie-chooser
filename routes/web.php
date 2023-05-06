@@ -26,9 +26,15 @@ Route::get('/add', function () {
 Route::get('/edit', function () {
     return view('movies.edit-movie');
 });
+Route::get('/about', function () {
+    return view('pages.about');
+});
+Route::get('/terms', function () {
+    return view('pages.terms');
+});
 
 Route::get('/register', [UserController::class, 'create']);
 Route::post('/register', [UserController::class, 'store'])->name('user.store');
 Route::get('/login', [UserController::class, 'login']);
 Route::post('/login', [UserController::class, 'authenticate']);
-Route::get('/logout', [UserController::class, 'logout']);
+Route::post('/logout', [UserController::class, 'logout']);
