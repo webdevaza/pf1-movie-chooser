@@ -30,9 +30,11 @@
                 </div>
             </nav>
             {{-- Add new movie button --}}
+            @auth
             <div class="w-full text-center text-xs text-blue-700" title="Authorized users only">
                 <a href="/add">ADD NEW MOVIE</a>
             </div>
+            @endauth
             {{-- Movies list --}}
             <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
                 <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
