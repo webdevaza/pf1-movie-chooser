@@ -42,7 +42,7 @@
     </ul>
     {{-- Auth start --}}
     @auth
-        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-gray-900 font-bold  rounded-xl transition duration-200" href="/profile">Profile</a>
+        <a class="hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-blue-600 font-bold uppercase rounded-xl transition duration-200" href="/profile">{{auth()->user()->firstName}}</a>
         <form action="/logout" method="POST" class="hidden lg:inline-block py-2 px-6 bg-gray-50 hover:bg-gray-100 text-sm text-center text-gray-900 font-bold rounded-xl transition duration-200">
             @csrf
             <button>
@@ -94,7 +94,7 @@
             <div class="pt-6 text-center">
                 {{-- Mobile auth start --}}
                 @auth
-                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold bg-gray-50 hover:bg-gray-100 rounded-xl" href="/profile">Profile</a>
+                    <a class="block px-4 py-3 mb-3 leading-loose text-xs text-center font-semibold text-blue-600 bg-gray-50 hover:bg-gray-100 rounded-xl uppercase" href="/profile">{{auth()->user()->firstName}}</a>
                     <form action="/logout" method="POST" class="inline">
                         @csrf
                         <button>    

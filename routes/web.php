@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +21,8 @@ Route::get('/', function () {
 Route::get('/random', function () {
     return view('movies.movie');
 });
-Route::get('/add', function () {
-    return view('movies.add-movie');
-});
+Route::get('/add', [MovieController::class, 'add'])->middleware('auth');
+Route::post('/add', [MovieController::class, 'store'])->middleware('auth');
 Route::get('/edit', function () {
     return view('movies.edit-movie');
 });
