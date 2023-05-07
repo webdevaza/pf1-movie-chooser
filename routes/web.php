@@ -15,17 +15,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('movies.movies');
-});
-Route::get('/random', function () {
-    return view('movies.movie');
-});
+Route::get('/', [MovieController::class, 'index']);
+Route::get('/movies/{id}', [MovieController::class, 'show']);
+Route::get('/random', [MovieController::class, 'random']);
+
 Route::get('/add', [MovieController::class, 'add'])->middleware('auth');
 Route::post('/add', [MovieController::class, 'store'])->middleware('auth');
-Route::get('/edit', function () {
-    return view('movies.edit-movie');
-});
+Route::get('/edit/{movie}', [MovieController::class, 'edit'])->middleware('auth');
+Route::put('/edit/{movie}', [MovieController::class, 'update'])->middleware('auth');
+
 Route::get('/about', function () {
     return view('pages.about');
 });
