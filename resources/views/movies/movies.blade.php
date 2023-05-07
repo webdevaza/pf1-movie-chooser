@@ -1,7 +1,6 @@
 @extends('app')
 
 @section('content')
-    
     <section class="bg-white py-8">
         {{-- Random movie button --}}
         <div class="text-center">
@@ -37,118 +36,25 @@
             @endauth
             {{-- Movies list --}}
             <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2023/04/the-mother-poster.jpg">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">Thriller</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2004/05/2004-troy-4-1.jpg">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://www.joblo.com/wp-content/uploads/2000/05/2000-poster-gladiator-1-1.jpg">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://oc.kg/media/images/9/e/9e56671d7cec5195999b7b2b6d6d8997/image.jpg">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">Action</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
-                    <a href="#">
-                        <img class="hover:grow hover:shadow-lg" src="https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80">
-                        <div class="pt-3 flex items-center justify-between">
-                            <p class="text-blue-500">MovieName</p>
-                        </div>
-                        <hr>
-                        <div class=" flex items-center justify-between">
-                            <p class="pt-1 text-gray-700 text-xs">History</p>
-                            <p class=" text-green-700">5.0</p>
-                        </div>
-                    </a>
-                </div>
-            </div>    
+                @foreach ($movies as $movie)
+                    <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
+                        <a href="/movies/{{$movie->id}}">
+                            <img class="hover:grow hover:shadow-lg" src="{{$movie->moviePosterExt}}">
+                            <div class="pt-3 flex items-center justify-between">
+                                <p class="text-blue-500">{{$movie->movieTitle}} ({{$movie->year}})</p>
+                            </div>
+                            <hr>
+                            <div class=" flex items-center justify-between">
+                                <p class="pt-1 text-gray-700 text-xs">History</p>
+                                <p class=" text-green-700">5.0</p>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div> 
+            <div class="mx-10">
+                <p>{{$movies->links()}}</p>
+            </div>   
         </div>
 
     </section>
