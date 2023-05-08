@@ -2,23 +2,17 @@
 
 namespace App\Models;
 
-use App\Models\User;
+use App\Models\Movie;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Movie extends Model
+class Watching extends Model
 {
     use HasFactory;
 
     protected $fillable = [
         'user_id',
-        'movieTitle',
-        'year',
-        'movieSource',
-        'description',
-        'moviePoster',
-        'moviePosterExt',
-        'points',
+        'movie_id',
     ];
 
     public function user()
@@ -26,8 +20,8 @@ class Movie extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function watchings ()
+    public function movie()
     {
-        return $this->hasMany(Watching::class, 'movie_id');
+        return $this->belongsTo(Movie::class, 'movie_id');
     }
 }
