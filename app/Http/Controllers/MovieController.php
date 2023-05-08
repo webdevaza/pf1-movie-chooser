@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
+use App\Models\Watching;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -54,13 +55,23 @@ class MovieController extends Controller
     {
         $movie = Movie::find($id);
 
+        $watched = Watching::where('movie_id',$movie->id)->where('user_id', auth()->user()->id)->first();
+
+        $movie['watching'] = $watched ? $watched->id : 'not yet';
+
         return response()->view('movies.movie', ['movie' => $movie]);
     }
 
     // Show a random movie
     public function random ()
     {
-        $randMovie = DB::table('movies')->inRandomOrder()->first();
+        $randMovie = Movie::query()->inRandomOrder()->first();
+
+        if (auth()->user()) {
+            $watched = Watching::where('movie_id',$randMovie->id)->where('user_id', auth()->user()->id)->first();
+
+            $randMovie['watching'] = $watched ? $watched->id : 'not yet';
+        }
 
         return response()->view('movies.movie', ['movie' => $randMovie]);
     }

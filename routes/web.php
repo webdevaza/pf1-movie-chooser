@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\WatchingController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -25,6 +26,9 @@ Route::post('/add', [MovieController::class, 'store'])->middleware('auth');
 Route::get('/edit/{movie}', [MovieController::class, 'edit'])->middleware('auth');
 Route::put('/edit/{movie}', [MovieController::class, 'update'])->middleware('auth');
 Route::delete('/delete/{movie}', [MovieController::class, 'destroy'])->middleware('auth');
+
+Route::post('/watch/{movie}', [WatchingController::class, 'store'])->middleware('auth');
+Route::delete('/unwatch/{movie}', [WatchingController::class, 'destroy'])->middleware('auth');
 
 Route::get('/about', function () {
     return view('pages.about');
