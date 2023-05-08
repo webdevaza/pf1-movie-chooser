@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="flex justify-center bg-white">
-        <div class="border-2 border-gray-300  md:w-1/3 bg-gray-100 rounded-lg m-2 p-2">
+        <div class="border-2 border-gray-300  md:w-1/3 bg-gray-100 rounded-lg m-2 p-2 text-center">
             <form class="m-2 p-2 text-center" action="/login" method="POST">
                 @csrf
                 <div class="mb-6">
@@ -20,6 +20,7 @@
                 @enderror 
                 <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign in</button>
             </form>
+            <a class="mb-2 text-xs text-blue-700 hover:text-blue-500" href="/register">Still have no account? Click to register!</a>
         </div>
     </div>
 @endsection

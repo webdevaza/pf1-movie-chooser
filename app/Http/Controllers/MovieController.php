@@ -55,25 +55,43 @@ class MovieController extends Controller
     {
         $movie = Movie::find($id);
 
-        $watched = Watching::where('movie_id',$movie->id)->where('user_id', auth()->user()->id)->first();
+        if (auth()->user()) {
+            $watched = Watching::where('movie_id',$movie->id)->where('user_id', auth()->user()->id)->first();
 
-        $movie['watching'] = $watched ? $watched->id : 'not yet';
-
+            $movie['watching'] = $watched ? $watched->id : 'not yet';
+        }
         return response()->view('movies.movie', ['movie' => $movie]);
     }
 
     // Show a random movie
     public function random ()
     {
-        $randMovie = Movie::query()->inRandomOrder()->first();
+        $newRandMovie = Movie::query()->inRandomOrder()->first();
 
         if (auth()->user()) {
-            $watched = Watching::where('movie_id',$randMovie->id)->where('user_id', auth()->user()->id)->first();
+            $watchedMovies = Watching::where('user_id', auth()->user()->id)->get('movie_id');
 
-            $randMovie['watching'] = $watched ? $watched->id : 'not yet';
+            $unwatchedMovies = Movie::whereNotIn('id', $watchedMovies)->get();
+
+            $newRandMovie = $unwatchedMovies->random();
+
+            $newRandMovie['watching'] = 'not yet';
+            
         }
 
-        return response()->view('movies.movie', ['movie' => $randMovie]);
+        return response()->view('movies.movie', ['movie' => $newRandMovie]);
+    }
+
+    // Show a random movie from the watched
+    public function watchedRandom ()
+    {
+        $watchedMovies = Watching::where('user_id', auth()->user()->id)->get();
+        
+        $randId = $watchedMovies->random()->movie_id;
+
+        $watchedRandMovie = Movie::firstWhere('id',$randId);
+        
+        return response()->view('movies.movie', ['movie' => $watchedRandMovie]);
     }
 
     // Movie edit page

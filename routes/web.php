@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [MovieController::class, 'index']);
 Route::get('/movies/{id}', [MovieController::class, 'show']);
 Route::get('/random', [MovieController::class, 'random']);
+Route::get('/watched-random', [MovieController::class, 'watchedRandom']);
 
 Route::get('/mymovies', [MovieController::class, 'mymovies'])->middleware('auth');
 Route::get('/add', [MovieController::class, 'add'])->middleware('auth');
