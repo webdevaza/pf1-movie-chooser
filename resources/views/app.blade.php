@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     @vite('resources/css/app.css')
     <title>Movie-chooser</title>
-    <link rel="icon" type="image/png" href="favicon-movie.png">
+    <link rel="icon" type="image/png" href="{{ Vite::asset('public/favicon-movie.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ Vite::asset('resources/css/styles.css') }}">
     <script src="{{ Vite::asset('resources/js/navbar.js') }}"></script>

@@ -41,6 +41,14 @@ class MovieController extends Controller
         return response()->view('movies.movies', ['movies' => $movies]);
     }
 
+    // Show all MY movies
+    public function mymovies ()
+    {
+        $mymovies = Movie::where('user_id', auth()->user()->id)->simplePaginate(12);
+
+        return response()->view('movies.movies', ['movies' => $mymovies]);
+    }
+
     // Show a particular movie
     public function show(string $id)
     {
@@ -77,6 +85,14 @@ class MovieController extends Controller
 
         $movie->update($movieEditForm);
 
-        return back()->with('message', $movie->movieTitle.' updated successfully.');
+        return redirect('/')->with('message', $movie->movieTitle.' updated successfully.');
+    }
+
+    // Delete a movie
+    public function destroy (Movie $movie)
+    {
+        $movie->delete();
+
+        return redirect('/')->with('message', $movie->movieTitle.' deleted successfully.');
     }
 }
