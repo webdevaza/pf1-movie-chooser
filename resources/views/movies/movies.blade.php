@@ -28,24 +28,27 @@
                     </form>
                 </div>
             </nav>
-            {{-- Add new movie button --}}
+            {{-- Movie tags and add button --}}
             @auth
-            <div class="w-full text-center text-xs text-blue-700" title="Authorized users only">
-                <a href="/add">ADD NEW MOVIE</a>
+            <div class="flex flex-wrap w-full justify-center text-center text-xs" title="Authorized users only">
+                <a class="w-20 mt-2 p-1 mx-2 bg-blue-600 border-2 border-blue-600 rounded-md text-white" href="/">ALL</a>
+                <a class="w-20 mt-2 p-1 mx-2 bg-green-600 border-2 border-green-600 rounded-md text-white" href="/mymovies">MINE</a>
+                <a class="w-20 mt-2 p-1 mx-2 text-blue-700 border-2 border-blue-500 rounded-md" href="/add"> + ADD</a>
             </div>
             @endauth
+
             {{-- Movies list --}}
-            <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+            <div class="container mx-auto flex items-center flex-wrap pt-2 pb-12">
                 @foreach ($movies as $movie)
                     <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
                         <a href="/movies/{{$movie->id}}">
-                            <img class="hover:grow hover:shadow-lg" src="{{$movie->moviePosterExt}}">
-                            <div class="pt-3 flex items-center justify-between">
-                                <p class="text-blue-500">{{$movie->movieTitle}} ({{$movie->year}})</p>
+                            <img class="hover:grow hover:shadow-lg aspect-[3/4]" src="{{$movie->moviePosterExt}}">
+                            <div class="pt-3 flex flex-wrap items-center justify-between">
+                                <p class="text-blue-500 h-6 text-sm truncate ..." title="{{$movie->movieTitle}} ({{$movie->year}})">{{$movie->movieTitle}} ({{$movie->year}})</p>
                             </div>
                             <hr>
                             <div class=" flex items-center justify-between">
-                                <p class="pt-1 text-gray-700 text-xs">History</p>
+                                <p class="pt-1 text-gray-700 text-xs truncate ...">History</p>
                                 <p class=" text-green-700">5.0</p>
                             </div>
                         </a>

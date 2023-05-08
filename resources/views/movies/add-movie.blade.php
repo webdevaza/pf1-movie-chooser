@@ -38,7 +38,7 @@
                 </div>
                 <div class="grid mb-6 md:grid-cols-1">
                     <label for="description" class="block text-sm font-medium text-gray-900 dark:text-white">Movie description</label>
-                    <textarea name="description" id="description" rows="4" class="block mt-2 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describe the movie">{{old('description')}}</textarea>
+                    <textarea name="description" id="description" maxlength="800" rows="4" class="block mt-2 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-400 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describe the movie">{{old('description')}}</textarea>
                     @error('description')
                         <p class="text-red-500 text-xs mt-1">
                             {{$message}}
