@@ -34,10 +34,19 @@ class MovieController extends Controller
         return redirect('/')->with('message', $movie->movieTitle.' has successfully been added.');
     }
 
-    // Show all movies
+    // Show all movies (searching is also here)
     public function index ()
     {
-        $movies = Movie::simplePaginate(12);
+        if(request('search')) {
+            $movies = Movie::where('movieTitle', 'like' , '%'.request('search').'%')
+                            ->orWhere('description', 'like' , '%'.request('search').'%')                
+                            ->orWhere('year', 'like' , '%'.request('search').'%')                
+                            ->orWhere('movieSource', 'like' , '%'.request('search').'%')                
+                            ->orWhere('points', 'like' , '%'.request('search').'%')                
+                            ->simplePaginate(12);
+        } else {
+            $movies = Movie::simplePaginate(12);
+        }
 
         return response()->view('movies.movies', ['movies' => $movies]);
     }
