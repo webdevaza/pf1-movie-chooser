@@ -87,6 +87,15 @@ class MovieController extends Controller
     {
         $watchedMovies = Watching::where('user_id', auth()->user()->id)->get();
         
+        if(count($watchedMovies) < 1) {
+            return redirect('/')->with('message', 'You haven\'t watched any movie yet.');
+        } 
+        elseif(count($watchedMovies) == 1) {
+            $randId = $watchedMovies[0]->movie_id;
+            
+            return redirect()->route('movie', $randId)->with('message', 'You have watched only this movie.');
+        }
+
         $randId = $watchedMovies->random()->movie_id;
 
         $watchedRandMovie = Movie::firstWhere('id',$randId);
