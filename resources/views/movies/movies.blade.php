@@ -55,7 +55,7 @@
                     </div>
                 @empty
                     <div class="w-full text-center">
-                        <p class="m-1 p-1 text-orange-600">Oops! We couldn't find {{request('search')}}</p>
+                        <p class="m-1 p-1 text-orange-600">Oops! We couldn't find <strong>{{request('search')}}</strong></p>
                     </div>
                 @endforelse
             </div> 

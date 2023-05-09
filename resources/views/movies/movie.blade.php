@@ -59,7 +59,7 @@
                 <hr>
                 <a href="/random" class="inline-flex justify-center items-center py-3 px-5 m-2 text-base text-center text-white rounded-lg bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:ring-[#24292F]/50 dark:focus:ring-gray-500">
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5M4 20L20.2 3.8M21 16v5h-5M15 15l5.1 5.1M4 4l5 5"/></svg>
-                    <p class="font-medium ml-3">Choose another movie</p>
+                    <p class="font-medium ml-3">Choose a new movie</p>
                 </a>
                 @auth
                     <a href="/watched-random" class="inline-flex justify-center items-center py-3 px-5 m-2 text-base text-center text-white rounded-lg bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-[#24292F]/50 dark:focus:ring-gray-500">
