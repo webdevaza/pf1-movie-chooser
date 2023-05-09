@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MovieController::class, 'index']);
-Route::get('/movies/{id}', [MovieController::class, 'show']);
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movie');
 Route::get('/random', [MovieController::class, 'random']);
 Route::get('/watched-random', [MovieController::class, 'watchedRandom']);
 
