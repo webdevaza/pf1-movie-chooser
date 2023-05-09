@@ -20,7 +20,7 @@
                             <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                                 <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
                             </div>
-                            <input type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies" required>
+                            <input name="search" value="{{request('search')}}" type="search" id="default-search" class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Movies">
                             <button type="submit" class="text-white absolute right-4 bottom-4 bg-gray-50">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#747070" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3H6a2 2 0 0 0-2 2v14c0 1.1.9 2 2 2h4M16 17l5-5-5-5M19.8 12H9"/></svg>
                             </button>
@@ -39,7 +39,7 @@
 
             {{-- Movies list --}}
             <div class="container mx-auto flex items-center flex-wrap pt-2 pb-12">
-                @foreach ($movies as $movie)
+                @forelse ($movies as $movie)
                     <div class="xs:w-1/2 sm:w-1/4 md:w-1/6 lg:w-1/7 xl:w-1/8 p-6 flex flex-col">
                         <a href="/movies/{{$movie->id}}">
                             <img class="hover:grow hover:shadow-lg aspect-[3/4]" src="{{$movie->moviePosterExt}}">
@@ -53,7 +53,11 @@
                             </div>
                         </a>
                     </div>
-                @endforeach
+                @empty
+                    <div class="w-full text-center">
+                        <p class="m-1 p-1 text-orange-600">Oops! We couldn't find {{request('search')}}</p>
+                    </div>
+                @endforelse
             </div> 
             <div class="mx-10">
                 <p>{{$movies->links()}}</p>
