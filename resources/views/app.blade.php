@@ -12,9 +12,9 @@
     <script src="{{ Vite::asset('resources/js/navbar.js') }}"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body class="text-gray-600 bg-gray-100 work-sans leading-normal text-base tracking-normal">
-    @include('partials.navbar')
-    @yield('content')
-    @include('partials.footer')
+  <body class="text-gray-600 bg-gray-100 work-sans leading-normal text-base tracking-normal min-h-screen">
+      @include('partials.navbar')
+      @yield('content')
+      @include('partials.footer')
   </body>
 </html>

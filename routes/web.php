@@ -37,6 +37,9 @@ Route::get('/about', function () {
 Route::get('/terms', function () {
     return view('pages.terms');
 });
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
 
 Route::get('/register', [UserController::class, 'create'])->middleware('guest');
 Route::post('/register', [UserController::class, 'store'])->name('user.store')->middleware('guest');
