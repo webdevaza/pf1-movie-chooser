@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<div class="container my-10 px-6 mx-auto">
+<div class="container my-10 mx-auto">
     <section class="mb-5 text-gray-800">
         <div class="container text-gray-800 px-4 md:px-12">
             <div class="block rounded-lg shadow-lg py-2 md:py-4 px-4 md:px-6 bg-gray-50 border-2" style="margin-top: 50px;">
