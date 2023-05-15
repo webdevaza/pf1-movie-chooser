@@ -29,9 +29,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # Install project dependencies using Composer
 RUN composer install --no-interaction --no-plugins --no-scripts --prefer-dist
 
-# Generate an application key
-RUN php artisan key:generate
-
 # Set the ownership and permissions
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
