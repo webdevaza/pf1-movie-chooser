@@ -26,14 +26,8 @@ COPY . .
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-# Clear Cache
-RUN composer clear-cache
-
-# Increase PHP memory limit
-RUN echo "memory_limit=512M" > /usr/local/etc/php/conf.d/memory-limit.ini
-
 # Install project dependencies using Composer
-RUN composer install --no-interaction --no-plugins --no-scripts --prefer-dist --verbose
+RUN composer install --no-interaction --no-plugins --no-scripts --prefer-dist
 
 # Generate an application key
 RUN php artisan key:generate
