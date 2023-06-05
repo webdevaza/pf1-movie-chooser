@@ -46,3 +46,15 @@ As a movie lover, I always wanted to create a cool website to help make choosing
 <p align="center"><img src="screenshots/10.png"></p>
 
 <p align="center"><img src="screenshots/footer.png"></p>
+
+## Tablet and smartphone views
+
+<p align="center"><img src="screenshots/tablet/tablet1.png"></p>
+
+<p align="center"><img src="screenshots/tablet/tablet2.png"></p>
+
+<p align="center"><img src="screenshots/mobile/mobile1.png"></p>
+
+<p align="center"><img src="screenshots/mobile/mobile2.png"></p>
+
+<p align="center"><img src="screenshots/mobile/mobile3.png"></p>
